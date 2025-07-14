@@ -2,7 +2,7 @@
 
 Welcome to the repository for **CSE3004: Design and Analysis of Algorithms**. This repository contains well-documented code, solutions, and notes covering both the **theory** and **lab components** of the course, aligned with the official curriculum (Version 1.2, approved on 25.05.2024).
 
-> 🧑‍💻 Maintained by: [Your Name]  
+> 🧑‍💻 Maintained by: Abhiram Adabala 
 > 🎓 Course Type: Embedded Theory and Lab (ETL)  
 > 📚 Academic Version: 1.2 (2024)
 
@@ -12,7 +12,7 @@ Welcome to the repository for **CSE3004: Design and Analysis of Algorithms**. Th
 
 - **Course Code:** CSE3004  
 - **Title:** Design and Analysis of Algorithms  
-- **Credits:** 3-2-4 (Lecture-Tutorial-Practical)  
+- **Credits:** 3-2-4  
 - **Pre-requisite:** CSE2001  
 - **Anti-requisite:** None  
 
@@ -128,8 +128,7 @@ If you'd like to improve the code, fix issues, or add new solutions:
 ## 📬 Contact
 
 Feel free to reach out for doubts or contributions:  
-📧 [your.email@example.com]  
-🌐 [yourportfolio.com](https://yourportfolio.com)
+📧 [abhiramvsa7@gmail.com]  
 
 ---
 
