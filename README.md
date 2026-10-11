@@ -1,7 +1,19 @@
-# CSE3004: Design and Analysis of Algorithms
-
 <p align="center">
   <img src="assets/algorithm-reference-logo.png" alt="Open book with an algorithm tree" width="240">
+</p>
+
+<h1 align="center">CSE3004: Design and Analysis of Algorithms</h1>
+
+<p align="center">
+  <a href="#java-examples">Java examples</a> |
+  <a href="#example-output-merge-sort">Example output</a> |
+  <a href="#run-the-examples">Run examples</a>
+</p>
+
+<p align="center">
+  <a href="#course-overview">Course overview</a> |
+  <a href="#textbooks-and-references">References</a> |
+  <a href="#license">License</a>
 </p>
 
 This repository contains a course reference for CSE3004 and three Java examples. The course details below come from the original README. They describe the course curriculum, not the code in this repository.
