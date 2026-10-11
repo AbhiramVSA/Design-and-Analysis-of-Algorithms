@@ -1,135 +1,166 @@
-# 📘 CSE3004 - Design and Analysis of Algorithms (Theory + Lab)
+# CSE3004: Design and Analysis of Algorithms
 
-Welcome to the repository for **CSE3004: Design and Analysis of Algorithms**. This repository contains well-documented code, solutions, and notes covering both the **theory** and **lab components** of the course, aligned with the official curriculum (Version 1.2, approved on 25.05.2024).
+<p align="center">
+  <img src="assets/algorithm-reference-logo.png" alt="Open book with an algorithm tree" width="240">
+</p>
 
-> 🧑‍💻 Maintained by: Abhiram Adabala 
-> 🎓 Course Type: Embedded Theory and Lab (ETL)  
-> 📚 Academic Version: 1.2 (2024)
+This repository contains a course reference for CSE3004 and three Java examples. The course details below come from the original README. They describe the course curriculum, not the code in this repository.
 
----
+- **Maintainer:** Abhiram Adabala
+- **Course type:** Embedded Theory and Lab (ETL)
+- **Academic version:** 1.2 (2024)
 
-## 🧭 Course Overview
+## Java examples
 
-- **Course Code:** CSE3004  
-- **Title:** Design and Analysis of Algorithms  
-- **Credits:** 3-2-4  
-- **Pre-requisite:** CSE2001  
-- **Anti-requisite:** None  
+The repository contains three Java source files. Each file declares a class named `Main`.
 
-### 📌 Course Objectives
+| Example | Source file | Behavior |
+|---|---|---|
+| Binary search | [binarySearch.java](sorting-algorithms/divide-and-conquer/binary-search/binarySearch.java) | The `main` method uses `Arrays.binarySearch` to search the sorted values 0 through 99 for 42. |
+| Merge sort | [mergeSort.java](sorting-algorithms/divide-and-conquer/merge-sort/mergeSort.java) | The `main` method sorts a fixed array of nine integers. |
+| Quick sort | [quickSort.java](sorting-algorithms/divide-and-conquer/quick-sort/quickSort.java) | The `main` method sorts a fixed array of nine integers. |
 
-- Understand classic algorithms across various domains.
-- Analyze time/space complexity using asymptotic notations.
-- Design algorithms using paradigms like Divide & Conquer, Greedy, Dynamic Programming, Backtracking, Branch and Bound.
-- Prove algorithm correctness using inductive techniques.
-- Solve real-world computational problems efficiently.
+The binary-search file also contains a private search method. The `main` method does not call that method.
 
----
+## Example output: merge sort
 
-## ✅ Course Outcomes (COs)
+Run this command from the repository root:
 
-| CO  | Description                                                                                               |
-|-----|-----------------------------------------------------------------------------------------------------------|
-| CO1 | Prove algorithm correctness and analyze running time using asymptotic analysis.                          |
-| CO2 | Identify problems suitable for Brute Force or Divide-and-Conquer paradigms.                             |
-| CO3 | Apply Greedy and Dynamic Programming for optimization problems.                                          |
-| CO4 | Understand and apply iterative improvement methods to real-world problems.                               |
-| CO5 | Solve decision problems using Backtracking with state-space trees.                                       |
-| CO6 | Apply Branch and Bound and understand NP-Completeness.                                                   |
+```sh
+mkdir -p /tmp/cse3004-merge-sort
+javac -d /tmp/cse3004-merge-sort sorting-algorithms/divide-and-conquer/merge-sort/mergeSort.java
+java -cp /tmp/cse3004-merge-sort Main
+```
 
----
+The program prints this result for its fixed input:
 
-## 🧪 Lab & Code Implementation
+```text
+1 2 3 4 5 6 7 8 9
+```
 
-All programs are implemented using C/C++ and Python (where applicable). Each code is properly structured, commented, and tested.
+The captured output ends with a space and has no final newline.
 
-### 🔧 Lab Exercises
+## Run the examples
 
-| #   | Topic                                                                                  | Technique              |
-|-----|----------------------------------------------------------------------------------------|------------------------|
-| 1   | Prim's Algorithm                                                                       | Greedy                 |
-| 2   | Kruskal's Algorithm                                                                    | Greedy                 |
-| 3   | Matrix Chain Multiplication                                                            | Dynamic Programming    |
-| 4   | 8-Queens Problem                                                                       | Backtracking           |
-| 5   | Strongly Connected Components in Digraph                                               | Graph Algorithm        |
-| 6   | File Compression and Decompression using Huffman Coding                                | Greedy                 |
-| 7   | All Pairs Shortest Path                                                                | Dynamic Programming    |
-| 8   | 0/1 Knapsack (Greedy & Dynamic Programming)                                            | Greedy, DP             |
-| 9   | 0/1 Knapsack (Backtracking & Branch and Bound)                                         | Backtracking, B&B      |
-| 10  | Optimal Binary Search Tree                                                             | Dynamic Programming    |
-| 11  | Traveling Salesman Problem (TSP) - DP                                                  | Dynamic Programming    |
-| 12  | TSP - Backtracking                                                                     | Backtracking           |
-| 13  | TSP - Branch and Bound                                                                 | Branch and Bound       |
-| 14  | Graph Coloring Problem                                                                 | Backtracking           |
-| 15  | Hamiltonian Circuit                                                                    | Backtracking           |
+Install a Java Development Kit (JDK) that provides `javac` and `java`. The repository has no Maven or Gradle build file. Compile each example separately because each source file declares a class named `Main`.
 
----
+Run these commands from the repository root:
 
-## 🧠 Theory Modules
+```sh
+mkdir -p /tmp/cse3004-binary-search
+javac -d /tmp/cse3004-binary-search sorting-algorithms/divide-and-conquer/binary-search/binarySearch.java
+java -cp /tmp/cse3004-binary-search Main
 
-| Module | Title                            | Hours | Key Topics                                                                                   |
-|--------|----------------------------------|--------|----------------------------------------------------------------------------------------------|
-| 1      | Introduction                     | 8      | Algorithms, Problem Solving, Analysis Techniques, Asymptotic Notations                      |
-| 2      | Divide and Conquer              | 6      | Merge Sort, Quick Sort, Binary Search                                                       |
-| 3      | Greedy & Dynamic Programming     | 12     | MST, Knapsack, LCS, Matrix Chain Multiplication, String Matching, Floyd/Warshall Algorithms |
-| 4      | Iterative Improvement            | 5      | Simplex, Max Flow, Stable Marriage Problem                                                  |
-| 5      | Backtracking                     | 6      | N-Queens, Subset Sum, Graph Coloring, Hamiltonian Circuit                                  |
-| 6      | Branch and Bound & NP-Completeness | 8    | TSP, Job Scheduling, NP Problems, Polynomial Reductions                                     |
+mkdir -p /tmp/cse3004-merge-sort
+javac -d /tmp/cse3004-merge-sort sorting-algorithms/divide-and-conquer/merge-sort/mergeSort.java
+java -cp /tmp/cse3004-merge-sort Main
 
----
+mkdir -p /tmp/cse3004-quick-sort
+javac -d /tmp/cse3004-quick-sort sorting-algorithms/divide-and-conquer/quick-sort/quickSort.java
+java -cp /tmp/cse3004-quick-sort Main
+```
 
-## 📘 Textbooks & References
+## Course overview
 
-### 📕 Primary Textbook
-- Anany Levitin, *Introduction to the Design and Analysis of Algorithms*, Pearson, 3rd Ed., 2017.
+- **Credits:** 3-2-4
+- **Prerequisite:** CSE2001
+- **Antirequisite:** None
 
-### 📚 References
-- Cormen et al., *Introduction to Algorithms*, MIT Press, 3rd Ed., 2012.  
-- Horowitz & Sahni, *Fundamentals of Computer Algorithms*, 2nd Ed., 2008.  
-- Aho, Hopcroft & Ullman, *Data Structures and Algorithms*, Pearson.  
-- Donald Knuth, *The Art of Computer Programming*, Vol. 1 & 3.  
-- Steven Skiena, *The Algorithm Design Manual*, Springer, 2nd Ed., 2008.
+### Course objectives
 
----
----
+- Understand classic algorithms across different domains.
+- Analyze time and space complexity with asymptotic notation.
+- Design algorithms with Brute Force, Divide and Conquer, Greedy, Dynamic Programming, Backtracking, and Branch and Bound.
+- Prove algorithm correctness with inductive methods.
+- Solve computational problems with efficient methods.
 
-## 🧪 Mode of Evaluation
+### Course outcomes
 
-| Component                        | Weightage |
-|----------------------------------|-----------|
-| **Theory**                       | 75%       |
-| - CAT 1                          | 15%       |
-| - CAT 2                          | 15%       |
-| - Digital Assignments/Quizzes    | 30%       |
-| - Final Assessment               | 40%       |
-| **Laboratory**                   | 25%       |
+| Outcome | Description |
+|---|---|
+| CO1 | Prove algorithm correctness and analyze running time with asymptotic analysis. |
+| CO2 | Identify problems that suit Brute Force or Divide and Conquer. |
+| CO3 | Apply Greedy and Dynamic Programming to optimization problems. |
+| CO4 | Understand and apply iterative improvement methods to real-world problems. |
+| CO5 | Solve decision problems with Backtracking and state-space trees. |
+| CO6 | Apply Branch and Bound and understand NP-Completeness. |
 
----
+### Lab topics in the course reference
 
-## 📅 Approval & Academic Info
+The course reference lists these lab topics. The repository does not contain source code for all of them.
 
-- **Modified by:** Dr. Saroj Kumar Panigrahy  
-- **Recommended by BoS:** 14th BoS, 11.05.2024  
-- **Approved by Academic Council:** 12th AC, 25.05.2024  
+| # | Topic | Method |
+|---:|---|---|
+| 1 | Prim's Algorithm | Greedy |
+| 2 | Kruskal's Algorithm | Greedy |
+| 3 | Matrix Chain Multiplication | Dynamic Programming |
+| 4 | 8-Queens Problem | Backtracking |
+| 5 | Strongly Connected Components in Digraph | Graph Algorithm |
+| 6 | File Compression and Decompression with Huffman Coding | Greedy |
+| 7 | All Pairs Shortest Path | Dynamic Programming |
+| 8 | 0/1 Knapsack (Greedy and Dynamic Programming) | Greedy, DP |
+| 9 | 0/1 Knapsack (Backtracking and Branch and Bound) | Backtracking, B&B |
+| 10 | Optimal Binary Search Tree | Dynamic Programming |
+| 11 | Traveling Salesman Problem (TSP) - DP | Dynamic Programming |
+| 12 | TSP - Backtracking | Backtracking |
+| 13 | TSP - Branch and Bound | Branch and Bound |
+| 14 | Graph Coloring Problem | Backtracking |
+| 15 | Hamiltonian Circuit | Backtracking |
 
----
+### Theory modules
 
-## 🤝 Contributing
+| Module | Title | Hours | Topics |
+|---:|---|---:|---|
+| 1 | Introduction | 8 | Algorithms, problem solving, analysis methods, asymptotic notation |
+| 2 | Divide and Conquer | 6 | Merge Sort, Quick Sort, Binary Search |
+| 3 | Greedy and Dynamic Programming | 12 | MST, Knapsack, LCS, Matrix Chain Multiplication, String Matching, Floyd-Warshall Algorithms |
+| 4 | Iterative Improvement | 5 | Simplex, Max Flow, Stable Marriage Problem |
+| 5 | Backtracking | 6 | N-Queens, Subset Sum, Graph Coloring, Hamiltonian Circuit |
+| 6 | Branch and Bound and NP-Completeness | 8 | TSP, Job Scheduling, NP Problems, Polynomial Reductions |
 
-If you'd like to improve the code, fix issues, or add new solutions:
-1. Fork the repo
-2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add your message'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Create a Pull Request
+## Textbooks and references
 
----
+### Primary textbook
 
-## 📬 Contact
+- Anany Levitin, *Introduction to the Design and Analysis of Algorithms*, Pearson, 3rd edition, 2017.
 
-Feel free to reach out for doubts or contributions:  
-📧 [abhiramvsa7@gmail.com]  
+### References
 
----
+- Cormen et al., *Introduction to Algorithms*, MIT Press, 3rd edition, 2012.
+- Horowitz and Sahni, *Fundamentals of Computer Algorithms*, 2nd edition, 2008.
+- Aho, Hopcroft, and Ullman, *Data Structures and Algorithms*, Pearson.
+- Donald Knuth, *The Art of Computer Programming*, Volumes 1 and 3.
+- Steven Skiena, *The Algorithm Design Manual*, Springer, 2nd edition, 2008.
 
-> ⭐ If you found this repository helpful, don't forget to give it a star!
+## Mode of evaluation
+
+| Component | Weight |
+|---|---:|
+| Theory | 75% |
+| Theory: CAT 1 | 15% |
+| Theory: CAT 2 | 15% |
+| Theory: digital assignments and quizzes | 30% |
+| Theory: final assessment | 40% |
+| Laboratory | 25% |
+
+## Academic approval
+
+- **Modified by:** Dr. Saroj Kumar Panigrahy
+- **Recommended by:** 14th BoS, 11.05.2024
+- **Approved by:** 12th AC, 25.05.2024
+
+## Contribute
+
+1. Fork this repository.
+2. Create a feature branch: `git checkout -b feature/YourFeature`.
+3. Commit your changes: `git commit -m 'Add your message'`.
+4. Push the branch: `git push origin feature/YourFeature`.
+5. Create a pull request.
+
+## Contact
+
+For questions or contributions, contact [abhiramvsa7@gmail.com].
+
+## License
+
+The repository includes the MIT License in [LICENSE](LICENSE).
